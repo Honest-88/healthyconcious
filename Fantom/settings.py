@@ -29,7 +29,7 @@ SECRET_KEY = 'hd$3k3%9m#7^4j!ng@!sudq-kx0l$#yp1g!81p*hz97dl02^=q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'healthyconcious.com', 'healthyconcious.herokuapp.com']
+ALLOWED_HOSTS = ['healthyconcious.herokuapp.com']
 
 
 # Application definition
@@ -160,10 +160,6 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.RawMediaCloudinaryStorage'
 LOGOUT_REDIRECT_URL ='/'
 LOGIN_REDIRECT_URL ='/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-
-RECAPTCHA_PUBLIC_KEY = '6LdLk1EhAAAAAN6rxFDXH6XPjQd8l8pqwc7GOqpb'
-RECAPTCHA_PRIVATE_KEY = '6LdLk1EhAAAAANfylxo5KHc7qdMrieGL241VqfvE'
 
 
 # CKEditor Settings
