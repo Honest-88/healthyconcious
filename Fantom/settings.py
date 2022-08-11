@@ -174,7 +174,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 django_heroku.settings(locals())
 
-DEBUG_PROPAGATE_EXCEPTIONS = True
+
 
 
 
