@@ -33,17 +33,17 @@
                             		<img class="img-fluid" src="{{ post.image.url }}" alt="">
                             	</div>
                             	<div class="blog_text">
-									<div class="blog_text_inner">
-										{% for tag in post.tag.all %}
-										<a class="cat" href="#">{{ tag.title }}</a>
-										{% endfor %}
-										<a href="{% url 'detail' pk=post.id slug=post.slug %}"><h4>{{ post.title }}</h4></a>
-										<p> {{ post.content |truncatechars:150}}</p>
-										<div class="date">
-											<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.publishing_date }}</a>
-											<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 05</a>
-										</div>
-									</div>
+				<div class="blog_text_inner">
+					{% for tag in post.tag.all %}
+					<a class="cat" href="#">{{ tag.title }}</a>
+					{% endfor %}
+					<a href="{% url 'detail' pk=post.id slug=post.slug %}"><h4>{{ post.title }}</h4></a>
+					<p> {{ post.content|safe|truncatechars:150}}</p>
+					<div class="date">
+						<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.publishing_date }}</a>
+						<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 05</a>
+					</div>
+				</div>
                             	</div>
                             </article>
 							{% endfor %}
